@@ -584,6 +584,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 3245266274533903541, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+      propertyPath: listeners.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245266274533903541, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+      propertyPath: listeners.Array.data[1].BaseEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: a242cf5ae7a0b4a4abdff53b85b04f40, type: 2}
+    - target: {fileID: 3245266274533903541, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+      propertyPath: listeners.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245266274533903541, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+      propertyPath: listeners.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3260945428359211876}
+    - target: {fileID: 3245266274533903541, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+      propertyPath: listeners.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245266274533903541, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+      propertyPath: listeners.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReadyStateChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245266274533903541, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+      propertyPath: listeners.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChangeIsReadyText, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245266274533903541, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+      propertyPath: listeners.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8887286970910929302, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -630,6 +662,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+--- !u!114 &3260945428359211876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7878813159621507310, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}
+  m_PrefabInstance: {fileID: 3260945428359211875}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877bf08eeccf9bc41988460266088ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6202803583387343605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8887286970910929302, guid: 57520e16ec5b77f40a7470e396b15bb3, type: 3}

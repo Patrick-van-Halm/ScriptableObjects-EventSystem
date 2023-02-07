@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,7 +9,7 @@ public abstract class BaseEventListener : MonoBehaviour
 
     private void OnEnable()
     {
-        foreach(Listener listener in listeners) listener.BaseEvent.RegisterListener(listener);
+        foreach (Listener listener in listeners) listener.BaseEvent.RegisterListener(listener);
     }
 
     private void OnDisable()

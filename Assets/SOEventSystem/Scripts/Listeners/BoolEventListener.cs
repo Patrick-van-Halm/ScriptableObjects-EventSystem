@@ -1,1 +1,2 @@
-public class BoolEventListener : GenericBaseEventListener<bool> {}
+public class BoolEventListener : GenericBaseEventListener<bool>
+{ }

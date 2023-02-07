@@ -1,14 +1,16 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class BaseEvent : ScriptableObject
 {
-    protected List<BaseEventListener.Listener> _listeners = new List<BaseEventListener.Listener>();
+    protected List<BaseEventListener.Listener> _listeners = new();
+    protected List<UnityAction> _actions = new();
 
     public void Invoke()
     {
-        foreach (BaseEventListener.Listener listener in _listeners.ToList()) listener.Invoke();
+        foreach (BaseEventListener.Listener listener in _listeners) listener.Invoke();
+        foreach (UnityAction action in _actions) action.Invoke();
     }
 
     public void RegisterListener(BaseEventListener.Listener listener)
@@ -19,5 +21,15 @@ public abstract class BaseEvent : ScriptableObject
     public void UnregisterListener(BaseEventListener.Listener listener)
     {
         _listeners.Remove(listener);
+    }
+
+    public void RegisterAction(UnityAction action)
+    {
+        _actions.Add(action);
+    }
+
+    public void UnregisterAction(UnityAction action)
+    {
+        _actions.Remove(action);
     }
 }

@@ -1,1 +1,2 @@
-public class EmptyEventListener : BaseEventListener{}
+public class EmptyEventListener : BaseEventListener
+{ }
